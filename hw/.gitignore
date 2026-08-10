@@ -7,3 +7,5 @@ ip/fpnew
 ip/fpu_div_sqrt_mvp
 ip/axi
 ip/tech_cells_generic
+ip/riscv-dbg
+*.lock

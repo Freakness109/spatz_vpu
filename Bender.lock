@@ -9,8 +9,8 @@ packages:
     - common_verification
     - tech_cells_generic
   common_cells:
-    revision: 9afda9abb565971649c2aa0985639c096f351171
-    version: 1.38.0
+    revision: 1281545696eb3fcba50ec5b4275993476a3c710e
+    version: 1.40.0
     source:
       Git: https://github.com/pulp-platform/common_cells.git
     dependencies:
@@ -46,6 +46,14 @@ packages:
     - axi
     - common_cells
     - tech_cells_generic
+  riscv-dbg:
+    revision: 122510063a02e0d012f0497ffdbafca53d4e716b
+    version: 0.7.0
+    source:
+      Git: https://github.com/pulp-platform/riscv-dbg.git
+    dependencies:
+    - common_cells
+    - tech_cells_generic
   snitch:
     revision: null
     version: null
@@ -53,10 +61,11 @@ packages:
       Path: hw/ip/snitch
     dependencies:
     - common_cells
+    - riscv-dbg
     - tech_cells_generic
   tech_cells_generic:
-    revision: 7968dd6e6180df2c644636bc6d2908a49f2190cf
-    version: 0.2.13
+    revision: 3a3de73632a06826b1bd9c65a0a2e92b32016845
+    version: 0.2.14
     source:
       Git: https://github.com/pulp-platform/tech_cells_generic.git
     dependencies:
